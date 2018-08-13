@@ -5,7 +5,15 @@ Mainly built by keras.
 Need improvement when using.
 Keep updating.
 
-alexnet:使用11x11以及5x5卷积核，并且使用尺寸3x3步长2x2的最大池化。
+alexnet:
+
+1.使用11x11以及5x5卷积核，并且使用尺寸3x3步长2x2的最大池化。
+
+2.使用relu激活函数。
+
+3.由于relu不会像sigmoid以及tanh一样将数据集中到一个区域内，故使用了local response normalization。
+
+4.使用了dropout。
 ![image](https://github.com/aranpaop/models/blob/master/alexnet.jpg)
 
 lenet:使用两个5x5卷积核。
