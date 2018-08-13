@@ -23,4 +23,8 @@ lenet:
 
 ![image](https://github.com/aranpaop/models/blob/master/lenet.jpg)
 
-zfnet:在alexnet的基础上使用7x7代替11x11卷积核。
+zfnet:
+
+1.在alexnet的基础上使用7x7代替11x11卷积核。是对alexnet的优化。
+
+![image](https://github.com/aranpaop/models/blob/master/zfnet.png)
