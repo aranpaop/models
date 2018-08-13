@@ -5,5 +5,8 @@ Mainly built by keras.
 Need improvement when using.
 Keep updating.
 
-alexnet:使用11*11以及5*5卷积核，并且使用尺寸3*3步长2*2的最大池化。
-lenet：使用两个5*5卷积核。
+alexnet:使用11x11以及5x5卷积核，并且使用尺寸3x3步长2x2的最大池化。
+
+lenet:使用两个5x5卷积核。
+
+zfnet:在alexnet的基础上使用7x7代替11x11卷积核。
