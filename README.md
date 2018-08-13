@@ -14,8 +14,13 @@ alexnet:
 3.由于relu不会像sigmoid以及tanh一样将数据集中到一个区域内，故使用了local response normalization。
 
 4.使用了dropout。
+
 ![image](https://github.com/aranpaop/models/blob/master/alexnet.jpg)
 
-lenet:使用两个5x5卷积核。
+lenet:
+
+1.使用两个5x5卷积核。
+
+![image](https://github.com/aranpaop/models/blob/master/lenet.jpg)
 
 zfnet:在alexnet的基础上使用7x7代替11x11卷积核。
