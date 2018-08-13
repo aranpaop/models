@@ -6,6 +6,7 @@ Need improvement when using.
 Keep updating.
 
 alexnet:使用11x11以及5x5卷积核，并且使用尺寸3x3步长2x2的最大池化。
+![image](https://github.com/aranpaop/models/blob/master/alexnet.jpg)
 
 lenet:使用两个5x5卷积核。
 
