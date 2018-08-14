@@ -60,3 +60,11 @@ googlenet:
 4.inception-v2的改进：添加了bn层。
 
 5.inception-v3的改进：卷积核的factorization：将5x5卷积核分解为两个3x3卷积核，或者更进一步的，将nxn分解为nx1和1xn，作用是减少训练参数，结构如图所示：
+
+![image](https://github.com/aranpaop/models/blob/master/factorization1.png)
+
+![image](https://github.com/aranpaop/models/blob/master/factorization2.png)
+
+6.reduction:pooling和conv同时进行
+
+7.inception-v4的改进：结合resnet
