@@ -34,3 +34,7 @@ vgg:
 1.使用更小的3x3卷积核，并增加网络层数。
 
 ![image](https://github.com/aranpaop/models/blob/master/vgg.png)
+
+resnet:
+
+1.使用残差网络解决网络层数过深导致的准确率下降问题，原因是误差反向传播时由于梯度的逐层衰减而无法传递到较浅的网络。
