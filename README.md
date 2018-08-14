@@ -49,6 +49,14 @@ resnet:
 
 googlenet:
 
-1.使用了inception网络，如左图，使用1x1、3x3、5x5以及3x3的maxpooling层进行多维度的特征提取并组合，为此作者给出了多种解释（特征丰富、稀疏矩阵分解成密集矩阵、赫布原理）。右图在3x3、5x5卷积之前以及pooling之后添加了一层1x1卷积（NIN），其作用是进行通道融合、减少参数等。
+1.使用了inception-v1网络，如左图，使用1x1、3x3、5x5以及3x3的maxpooling层进行多维度的特征提取并组合，为此作者给出了多种解释（特征丰富、稀疏矩阵分解成密集矩阵、赫布原理）。右图在3x3、5x5卷积之前以及pooling之后添加了一层1x1卷积（NIN），并引入relu，其作用是进行通道融合、减少参数等。
 
 ![image](https://github.com/aranpaop/models/blob/master/inception.png)
+
+2.由于中间层也有较好的分类效果，在中间层有输出，并与最终输出加权，相当于模型融合。
+
+3.使用global average pooling替代全连接层，原论文中解释的好处有两个：一是能将卷积得到的特征图与类别之间建立很好的关联，二是大量减少了参数计算（这里没有参数）。
+
+4.inception-v2的改进：添加了bn层。
+
+5.inception-v3的改进：卷积核的factorization：将5x5卷积核分解为两个3x3卷积核，或者更进一步的，将nxn分解为nx1和1xn，作用是减少训练参数，结构如图所示：
