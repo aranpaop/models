@@ -5,6 +5,7 @@ Mainly built by keras.
 Need improvement when using.
 Keep updating.
 
+一.基本分类网络
 alexnet:
 
 1.使用11x11以及5x5卷积核，并且使用尺寸3x3步长2x2的最大池化。
@@ -72,3 +73,13 @@ googlenet:
 ![image](https://github.com/aranpaop/models/blob/master/inception-resnet.png)
 
 ![image](https://github.com/aranpaop/models/blob/master/inceptionv4.png)
+
+mobilenet:
+
+1.使用了depth-wise convolution 以及point-wise convolution。深度卷积是以一组与通道数量相等的3x3的二维卷积核分别对每一个通道进行卷积运算，得到通道数相同的特征图。点卷积是在上一步的基础上进行1x1卷积运算。这样在不太大牺牲准确率的情况下减少了参数，提升了速度。
+
+2.mobilenet-v2的改进：深度卷积之前采用1x1卷积进行通道扩张，使得能够提取更多特征。点卷积之后使用linear代替relu，防止特征被破坏。如下图所示：
+
+![image](https://github.com/aranpaop/models/blob/master/mobilenet.png)
+
+3.使用relu6作为非线性激活函数。
