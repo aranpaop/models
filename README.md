@@ -28,3 +28,9 @@ zfnet:
 1.在alexnet的基础上使用7x7代替11x11卷积核。是对alexnet的优化。
 
 ![image](https://github.com/aranpaop/models/blob/master/zfnet.png)
+
+vgg:
+
+1.使用更小的3x3卷积核，并增加网络层数。
+
+![image](https://github.com/aranpaop/models/blob/master/vgg.png)
