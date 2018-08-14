@@ -65,6 +65,10 @@ googlenet:
 
 ![image](https://github.com/aranpaop/models/blob/master/factorization2.png)
 
-6.reduction:pooling和conv同时进行
+6.reduction:pooling和conv同时进行。
 
-7.inception-v4的改进：结合resnet
+7.inception-v4的改进：结合resnet，如下图所示：
+
+![image](https://github.com/aranpaop/models/blob/master/inception-resnet.png)
+
+![image](https://github.com/aranpaop/models/blob/master/inceptionv4.png)
